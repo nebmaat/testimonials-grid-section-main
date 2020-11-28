@@ -1,0 +1,102 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    background-color: hsl(0, 0%, 81%);
+    font-family: 'Barlow Semi Condensed', sans-serif;
+    font-size: 13px;
+    width: 100%;
+    margin: 5em;
+}
+
+
+
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-gap: 20px;
+    grid-template-areas:
+        "Daniel Daniel Jonathan Kira"
+        "Jeanette Patrick Patrick Kira";
+
+}
+
+.Daniel {
+    grid-area: Daniel;
+    background: hsl(263, 55%, 52%);
+    color: #ffffff;
+}
+
+.Daniel p {
+    color: #d6d0d0;
+}
+
+.Daniel img {
+    border: 2px solid hsl(263, 59%, 70%);
+}
+
+.Jonathan {
+    grid-area: Jonathan;
+    background: rgb(66, 71, 99);
+    color: #ffffff;
+}
+
+.Jonathan p {
+    color: #d6d0d0;
+}
+
+.Kira {
+    grid-area: Kira;
+    background: #ffffff;
+    color: hsl(217, 19%, 35%);
+}
+
+.Kira p {}
+
+.Patrick {
+    grid-area: Patrick;
+    background: rgb(30, 37, 59);
+    color: #ffffff;
+}
+
+.Patrick p {
+    color: #d6d0d0;
+}
+
+.Patrick img {
+    border: 2px solid hsl(263, 55%, 52%);
+}
+
+
+.Jeanette {
+    grid-area: Jeanette;
+    background: #ffffff;
+    color: #4d4b4b;
+}
+
+.Jeanette p {
+    color: #4d4b4b;
+}
+
+.Daniel,
+.Jonathan,
+.Kira,
+.Patrick,
+.Jeanette {
+    border-radius: 10px;
+    padding: 20px;
+}
+
+.Daniel img,
+.Jonathan img,
+.Kira img,
+.Patrick img,
+.Jeanette img {
+    border-radius: 50%;
+}
